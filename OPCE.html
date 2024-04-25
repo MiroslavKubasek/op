@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Dvě iframes na jedné stránce</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .iframe-container {
+    display: flex;
+    height: 100%;
+  }
+  iframe {
+    width: 50%;
+    height: 100%;
+    border: none;
+  }
+</style>
+</head>
+<body>
+<div class="iframe-container">
+  <iframe src="https://finance.yahoo.com/chart/%5EGSPC"></iframe>
+  <iframe src="https://finance.yahoo.com/chart/SPY"></iframe>
+</div>
+</body>
+</html>
